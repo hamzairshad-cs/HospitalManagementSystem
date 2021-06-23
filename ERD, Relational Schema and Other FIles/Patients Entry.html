@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head> 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+crossorigin="anonymous">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+ <link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css"> <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+ <link 
+href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Grenze+Gotisch:wght@700&display=swa
+p" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+ <title>
+ PATIENT DATA ENTRY FORM
+ 
+ </title>
+ 
+ 
+ <style>
+.topnav {
+ background-color:white;
+ overflow: hidden;
+}
+.topnav a {
+ float: left;
+ color: black;
+ text-align: center;
+ padding: 10px 120px; text-decoration: none;
+ font-size: 12px;
+ font-family: 'Orbitron', sans-serif ;
+ background-color: #f4f5f6;
+}
+.topnav a:hover {
+ background-color:darkgray;
+ color: black;
+}
+.ft{
+ font-family: "Allerta Stencil", Sans-serif;
+}
+.footer {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color:navy;
+ color:grey;
+ text-align: center;
+}
+ .r{
+ margin-left: 0px;
+ margin-right:0px;
+ padding-left: 0px;
+ padding-right: 0px; 
+ margin-bottom: 0px; margin-top: 0px;
+}
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 200px;
+ font-family: arial;
+}
+ .center { 
+ text-align:center; 
+ 
+ width:80px; 
+ 
+ } 
+ .tales {
+ width: 100%;
+}
+.carousel-inner{
+ width:100%;
+ max-height: 350px !important;
+}
+.fa {
+ padding: 5px;
+ font-size: 20px;
+ width: 30px;
+ text-align: center; text-decoration: none;
+ 
+ border-radius: 50%;
+}
+ .fa-facebook {
+ background: #3B5998;
+ color: white;
+ text-align: center;
+ } 
+ .fa-twitter {
+ background: #55ACEE;
+ color: white;
+ text-align: center;
+ }
+ .fa-google {
+ background: #dd4b39;
+ color: white;
+ }
+ .fa-linkedin {
+ background: #007bb5;
+ color: white;
+ }
+ 
+  @media only screen and (max-width: 480px) {
+ .slideshow__image:not(.ratio-container),.ratio-container:after {
+ padding-bottom: 85%;
+ width: 100%;
+ }
+}
+body{
+ background-image: url("12.jpg");
+ max-width: 100%;
+ overflow-x: hidden;
+ background-color: black;
+ 
+}
+ </style>
+</head>
+ <body >
+ <div class="row" style="text-align: center; font-family: 'Orbitron', sans-serif ;">
+ <div class="col-sm-8" style="margin-right: auto;margin-left: auto; color: white;">
+ <p>PATIENT'S DATA ENTRY FORM ( ONLY FOR OFFICIAL USE)</p>
+ <br><br>
+</div> </div>
+ <form action="dbprojectinsert2.php" method="POST">
+ <div class="row">
+ <div class="col-sm-3">
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Patient Number:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="patient_number" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Pateint Name:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="patient_name" value=" " > 
+ </div>
+ <div class="col-sm-4">
+ 
+ </div>
+ </div>
+<div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Age:</p>
+ </div> <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="age" value=" " > 
+ </div>
+ <div class="col-sm-4">
+ 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4"> 
+ <p style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">GENDER:</p>
+ </div>
+ <div class="col-sm-4" style=" ">
+ <label style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="Male" 
+name="gender" value="M" >Male</label> 
+ <label style= "color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="Female" 
+name="gender" value="F" >Female</label> 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Address:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="address" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Phone Number:</p>
+ </div> <div class="col-sm-4" style="align-items: left;">
+ <input type="Phone" id="name" name="phone_number" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Entry Date:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="date" id="name" name="entry_date" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Doctor name:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="doctor" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Doctor Id:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="doctor_id" value=" " > 
+ </div>
+ </div>
+ <div class="row"> <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Department Name:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="department_name" value=" " > 
+ </div>
+ </div>
+ <br>
+ <div class="row">
+ <div class="col-sm-4" >
+ <p style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">City:</p>
+ </div>
+ <div class="col-sm-4">
+ <select name="City" id="City" >
+ <option value="Select">Select City</option>
+ <option value="Lahore">Lahore</option>
+ <option value="Karachi">Karachi</option>
+ <option value="Islamabad">Islamabad</option>
+ </select>
+ </div>
+ 
+ </div>
+ <br>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Diagnosis:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="diagnosis" value=" " >  </div>
+ </div>
+ 
+ 
+ 
+ </div>
+ 
+ 
+<div class="col-sm-3">
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Date Of Checkup:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="date" id="name" name="date_of_checkup" value=" " > 
+ </div>
+ </div>
+<div class="row">
+ <div class="col-sm-4"> 
+ <p style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Patient Status:</p>
+ </div>
+ <div class="col-sm-4" style=" ">
+ <label style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="admitted" 
+name="status" value="admitted" >Admitted</label> 
+ <label style= "color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="regular" 
+name="status" value="regular" >Regular Checkup</label>  <label style= "color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" 
+id="referral_for_operation" name="status" value="referal for operation" >Operation Referral</label>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Room Number :</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="room_number" value=" " > 
+ </div>
+ </div>
+<div class="row">
+ <div class="col-sm-4"> 
+ <p style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Room Type:</p>
+ </div>
+ <div class="col-sm-4" style=" ">
+ <label style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="government" 
+name="roomtyp" value="G" >General</label> 
+ <label style= "color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="private" 
+name="roomtyp" value="P" >Private</label> 
+ </div>
+ </div>
+<div class="row">
+ <div class="col-sm-4"> 
+ <p style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Room Status:</p>
+ </div>
+ <div class="col-sm-4" style=" ">
+ <label style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="occupied" 
+name="room_status" value="Y" >OCCUPIED</label>  <label style= "color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="not_occupied" 
+name="room_status" value="N" >NOT OCCUPIED</label> 
+ 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Charges Per Day:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="number" id="name" name="charges_per_day" value=" " > 
+ </div>
+ </div>
+ 
+ </div> 
+ <div class="col-sm-3">
+ <div class="row">
+ <div class="col-sm-4"> 
+ <p style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">//patient admission information </p>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Advance Payment:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;"> <input type="number" id="name" name="advance_payment" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Date Of Admission:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="date" id="name" name="date_of_admission" value=" " > 
+ </div>
+ </div>
+ 
+ <div class="row">
+ <div class="col-sm-4"> 
+ <p style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Mode Of Payment</p>
+ </div>
+ <div class="col-sm-4" style=" ">
+ <label style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="Credit Card" 
+name="mode_of_payment" value="Credit card" >Credit Card</label> 
+ <label style= "color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="Cash" 
+name="mode_of_payment" value="cash" >Cash</label> 
+ <label style= "color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="Easypaisa" 
+name="mode_of_payment" value="easypaisa" >Easypaisa</label>
+ </div>
+ </div>
+ 
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Initial Condition:</p> </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="initial_condition" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Diagnosis:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="diagnosis" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Number Of Doctors:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="number" id="name" name="number_of_doctors" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Attendant:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="attendant_name" value=" " > 
+ </div>
+ </div> </div> 
+ <div class="col-sm-3">
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Treatment Advice:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="treatment_advice" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Payment Made:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="number" id="name" name="payment_made" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Date Of Discharge:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="date" id="name" name="date_of_discharge" value=" " > 
+ </div>
+ </div> <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Medicine recommend:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="medicine_recommended" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4"> 
+ <p style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Treatment Status</p>
+ </div>
+ <div class="col-sm-4" style=" ">
+ <label style=" color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="completed" 
+name="treatment_status" value="completed" >Completed</label> 
+ <label style= "color:#c5c5c5; font-family: 'Orbitron', sans-serif ; "><input type="radio" id="in_progress" 
+name="treatment_status" value="in_progress" >In Progress</label> 
+ 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Date Of Operation:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="date" id="name" name="date_of_operation" value=" " > 
+ </div> </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Operation Theater Number 
+:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="operation_theater_number" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Type of Operation:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="type_of_operation" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Pateint Condition Before :</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="patient_condition_before" value=" " > 
+ </div>
+ </div>
+ <div class="row"> <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Patient Condition After:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="patient_condition_after" value=" " > 
+ </div>
+ </div>
+ 
+ 
+ <div class="row">
+ <div class="col-sm-4">
+ <p style="text-align: left; color:#c5c5c5; font-family: 'Orbitron', sans-serif ; ">Treatment:</p>
+ </div>
+ <div class="col-sm-4" style="align-items: left;">
+ <input type="text" id="name" name="treatment" value=" " > 
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-sm-4">
+ <input type="submit" value="Submit">
+ </div>
+ </div>
+ </div>
+ </div> 
+</form>
+</div> 
+ </div>
+ 
+ </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-
+KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-
+JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-
+ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-
+JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_sKEY&callback=myMap"></script>
+</body>
+</html>
